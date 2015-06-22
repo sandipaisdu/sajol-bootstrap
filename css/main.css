@@ -1,0 +1,647 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+   background: #fff;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   color: #919191;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+   font-family: 'Roboto Slab', serif;
+   font-weight: bold;
+   margin-bottom: 30px;
+   color: #1D1F21;
+}
+
+h4,h5,h6 {
+   color: #6F6E6E;
+}
+
+#header,
+#profile,
+#skill,
+#about_me,
+#resume,
+#biography,
+#testimonial,
+#portfolio,
+#contact,
+#footer {
+   padding: 50px 0;
+}
+
+
+
+/**************************************
+            Top Banner
+**************************************/
+
+.top-banner {
+    background: url("../img/banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 300px 120px 200px;
+}
+
+.banner-heading {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.banner-heading h1,
+.btn-more {
+    background: none;
+    color: #fff;
+    font-weight: bold;
+    -webkit-transition: .5s;
+    transition: .5s;
+
+}
+
+.banner-heading h1 {
+    font-size: 55px;
+}
+
+.btn-more {
+    border: 2px solid #fff;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border-radius: 0;
+}
+
+.btn-more:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #68CC71;
+}
+
+
+/**************************************
+            Main Header
+**************************************/
+
+#header {
+   background: #252E30;
+   padding: 15px 0;
+}
+
+.logo h2 {
+   display: inline;
+   padding-left: 5px;
+   font-size: 25px;
+   color: #fff;
+   vertical-align: middle;
+}
+
+.logo h2 span {
+   color: #2ECC66;
+}
+
+.slicknav_menu {
+   display:none;
+}
+
+.nav li {
+   margin-top: 3px;
+   font-size: 14px;
+}
+
+.nav li a {
+   color: #fff;
+   font-weight: bold;
+   -webkit-transition: .4s;
+   transition: .4s;
+   border-bottom: 2px solid #252E30;
+}
+
+.nav li a:hover {
+   background: none;
+   color: #2ECC66;
+   border-bottom: 2px solid #2ECC66;
+   text-shadow: 0 2px 2px black;
+   box-shadow: 0 3px 5px black;
+}
+
+
+/**************************************
+            My Profile
+**************************************/
+
+#profile,
+#skill {
+   background: #fff;
+   padding: 50px 0;
+}
+
+/**************************************
+            About Me
+**************************************/
+
+#about_me {
+   background: #F2F2F1 url("../img/profile.jpg") no-repeat;
+}
+
+.glyphicon {
+   font-size: 40px;
+   color: #2ECC71;
+   margin-bottom: 10px;
+   float: left;
+}
+
+.service-box {
+   margin-top: 25px;
+}
+.service-text {
+   width: 80%;
+   margin-top: -2px;
+   font-size: 14px;
+}
+
+.about-me-area {
+   background: #F2F2F1;
+   margin: -50px auto -50px;
+   padding: 50px 0 50px 50px;
+}
+
+/**************************************
+            Resume
+**************************************/
+
+#resume {
+   background: #F2F2F1;
+   text-align: center;
+}
+
+.resume-area {
+   width: 80%;
+   margin: 0 auto;
+}
+
+.btn-contact {
+   background: transparent;
+   border: 2px solid #2ECC71;
+   margin: 20px auto;
+   padding: 20px 30px;
+   border-radius: 0;
+   color: #2ECC71;
+   font-weight: bold;
+   -webkit-transition: .5s;
+   transition: .5s;
+}
+
+.btn-contact:hover {
+   background: #2ECC71;
+   color: #fff;
+}
+
+.progress-up {
+   height: 30px;
+   margin-bottom: 25px;
+   overflow: hidden;
+   background-color: #F2F2F1;
+   border-radius: 2px;
+}
+
+.arrow_box {
+   position: relative;
+   border: 0;
+}
+.arrow_box:after, .arrow_box:before {
+   top: 100%;
+   left: 50%;
+   border: solid transparent;
+   content: " ";
+   height: 0;
+   width: 0;
+   position: absolute;
+   pointer-events: none;
+}
+
+.arrow_box:after {
+   border-color: rgba(136, 183, 213, 0);
+   border-top-color: #F2F2F1;
+   border-width: 30px;
+   margin-left: -30px;
+}
+.arrow_box:before {
+   border-color: rgba(194, 225, 245, 0);
+   border-top-color: #F2F2F1;
+   border-width: 36px;
+   margin-left: -36px;
+}
+
+/**************************************
+            Biography
+**************************************/
+
+.biography {
+   background: #FFFFFF;
+}
+
+
+.degree,
+.organization {
+   margin-bottom: 35px;
+}
+.degree h4,
+.organization h4 {
+   margin-bottom: 5px;
+}
+
+.grade,
+.exper {
+   background: #2ECC71;
+   color: #fff;
+   font-weight: bold;
+   padding: 8px 16px;
+}
+
+
+
+/**************************************
+            Testimonial
+**************************************/
+
+#testimonial {
+   background: #f2f2f1;
+   padding-bottom: 105px;
+}
+
+.section-padding {
+  padding: 100px 0px;
+}
+
+#testimonial-carousel {
+  width: 63%;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+.carousel-indicators .active {
+  background-color: #2ecc71;
+}
+
+
+/**************************************
+            Portfolio
+**************************************/
+
+#portfolio img {
+   margin-bottom: 25px;
+}
+
+.portfolio-heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.portfolio-heading p {
+    margin-bottom: 50px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+/**************************************
+            Contact
+**************************************/
+
+#contact {
+    background: #252E30;
+}
+
+#contact h3,
+.info span {
+    color: #fff;
+}
+
+
+
+.info p,
+address {
+    margin-bottom: 50px;
+}
+
+.form input,
+.form textarea{
+    background: #4A5355;
+    border: 1px;
+    border-radius: 0;
+}
+
+.btn-contact {
+    background: #181E20;
+    border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**************************************
+            Footer
+**************************************/
+
+#footer {
+    background: #191F21;
+}
+
+.footer-content p {
+    text-align: center;
+    font-size: 18px;
+    color: #485153;
+}
+
+.foot-nav {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.foot-nav li {
+    width: 45px;
+    height: 45px;
+    padding: 3px 0;
+    background: #4B5456;
+    border-radius: 50%;
+    margin: 5px 2px;
+}
+
+.foot-nav .fa {
+    font-size: 20px;
+}
+
+.foot-nav li a {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.foot-nav li a:hover {
+    padding-top: 5px;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
